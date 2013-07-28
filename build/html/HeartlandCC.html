@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Loyola University Chicago Computer Science - Transfer Guides &mdash; Loyola University Chicago Computer Science - Graduate Handbook 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-responsive.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/searchtools.js"></script>
+    <script type="text/javascript" src="_static/bootstrap.js"></script>
+    <link rel="top" title="Loyola University Chicago Computer Science - Graduate Handbook 1.0 documentation" href="index.html" />
+<script type="text/javascript">
+(function () {
+  /**
+   * Patch TOC list.
+   *
+   * Will mutate the underlying span to have a correct ul for nav.
+   *
+   * @param $span: Span containing nested UL's to mutate.
+   * @param minLevel: Starting level for nested lists. (1: global, 2: local).
+   */
+  var patchToc = function ($span, minLevel) {
+    var $tocList = $("<ul/>").attr('class', "dropdown-menu"),
+      findA;
+
+    // Find all a "internal" tags, traversing recursively.
+    findA = function ($elem, level) {
+      var level = level || 0,
+        $items = $elem.find("> li > a.internal, > ul, > li > ul");
+
+      // Iterate everything in order.
+      $items.each(function (index, item) {
+        var $item = $(item),
+          tag = item.tagName.toLowerCase(),
+          pad = 10 + ((level - minLevel) * 10);
+
+        if (tag === 'a' && level >= minLevel) {
+          // Add to existing padding.
+          $item.css('padding-left', pad + "px");
+          // Add list element.
+          $tocList.append($("<li/>").append($item));
+        } else if (tag === 'ul') {
+          // Recurse.
+          findA($item, level + 1);
+        }
+      });
+    };
+
+    // Start construction and return.
+    findA($span);
+    
+    // Add previous and next topic links to bottom of TOC dropdown
+    
+      // Helper Functions
+      var header = function (text){
+        var $header = $("<li/>").append(text);
+        $header.css({
+          'padding-left': '10px',
+          'font-weight' : 'bold'
+        });
+        return $header;
+      };
+    
+      var topicLink = function (link, title) {
+        var $linkItem = $("<li/>").append('<a href="'+link+'">'+title+'</a>');
+        return $linkItem;
+      };
+    
+      // Append Separator
+      
+    
+    
+      
+      
+      
+    
+
+    // Wipe out old list and patch in new one.
+    return $span.empty("ul").append($tocList);
+  };
+
+  $(document).ready(function () {
+    // Patch the global and local TOC's to be bootstrap-compliant.
+    // patchToc($("span.globaltoc"), 1);
+    patchToc($("span.localtoc"), 2);
+    
+    // Activate.
+    $('.dropdown-toggle').dropdown();
+
+  });
+}());
+</script>
+
+  </head>
+  <body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        
+        <a class="brand" href="index.html">LUC CS Grad Handbook</a>
+        <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="divider-vertical"></li>
+          
+          
+          <li class="dropdown" data-dropdown="dropdown">
+            <a href="#"
+               class="dropdown-toggle">Table of Contents  <b class="caret"></b></a>
+            <span class="localtoc"><ul>
+<li><a class="reference internal" href="#">Loyola University Chicago Computer Science - Transfer Guides</a></li>
+<li><a class="reference internal" href="#heartland-community-college">Heartland Community College</a></li>
+</ul>
+</span>
+          </li>
+          
+          
+            
+  <li class="divider-vertical"></li>
+  <li><a href="_sources/HeartlandCC.txt"
+         rel="nofollow">Source</a></li>
+          
+          <li class="divider-vertical"></li>
+
+        </ul>
+        
+          
+            <ul class="nav pull-right">
+  <li><a href="genindex.html"> Index </a></li>
+ <li class="divider-vertical"></li>
+<form class="navbar-search" action="search.html" method="get">
+  <input type="text" name="q" class="search-query" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form> 
+</ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container" >
+      <div class="row">
+
+        <div class="content span12" data-spy="scroll" data-target="#navbar">
+          
+  <div class="section" id="loyola-university-chicago-computer-science-transfer-guides">
+<h1>Loyola University Chicago Computer Science - Transfer Guides<a class="headerlink" href="#loyola-university-chicago-computer-science-transfer-guides" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="heartland-community-college">
+<h1>Heartland Community College<a class="headerlink" href="#heartland-community-college" title="Permalink to this headline">¶</a></h1>
+<p>If you have completed or are taking a course that is not listed, please contact us at (312) 915-7989.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Heartland Community College Courses</th>
+<th class="head">Equivalent Course at Loyola</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>CSCI 110: Introduction to Database Management Systems</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>CSCI 130: Computer Science I</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>CSCI 131: Computer Science II</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>CSCI 135: COBOL Programming I</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>CSCI 136: Programming in Visual Basic</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>CSCI 138: COBOL Programming II</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>CSCI 151: iPhone Programming</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>CSCI 153: Android Development</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>CSCI 220: C Programming</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>CSCI 221: C++ Programming</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>CSCI 224: Programming in Java</td>
+<td>COMP 170 - Introduction to Object-Oriented Programming</td>
+</tr>
+<tr class="row-odd"><td>CSCI 230: Network Programming in Java</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>CSCI 231: Graphical Programming in Java</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>CSCI 232: Enterprise Application Programming in Java</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>CSCI 233: Enterprise Application Programming in Java I</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>CSCI 234: Enterprise Application Programming in Java II</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>CSCI 240: Data Structures</td>
+<td>COMP 271 - Data Structures</td>
+</tr>
+<tr class="row-odd"><td>CSCI 251: Mobile Game Programming</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>CSCI 252: Mobile Applications Programming</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>CSCI 253: Mobile Communications Programming</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>CSCI 260: Database Management Systems</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>CSCI 296: Special Topics in Computer Technology</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>NETW 121: Networking Fundamentals</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>NETW 122: Routing Protocols and Concepts</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>NETW 123: Local Area Networks</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>NETW 124: Wide Area Networks</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>NETW 150: Workstation Operating Systems</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>NETW 160: Introduction to Networking</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>NETW 162: Networking Technologies</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>NETW 166: Windows Workstation Administration</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>NETW 167: Windows Server Administration</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>NETW 170: Network Security Fundamentals</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>NETW 172: Wireless Networking with Security</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>NETW 181: UNIX Fundamentals</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>NETW 182: Linux Administration</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>NETW 183: Linux Security</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>NETW 208: Data and Cabling Systems</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>NETW 221: Advanced Routing</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>NETW 223: Advanced Switching</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>NETW 261: Windows Network Infrastructure</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>NETW 262: Windows Directory Services</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>NETW 271: Cisco Router Security</td>
+<td>Elective</td>
+</tr>
+<tr class="row-even"><td>NETW 283: Introduction to Voice Over IP</td>
+<td>Elective</td>
+</tr>
+<tr class="row-odd"><td>NETW 296: Special Topics in Networking</td>
+<td>Elective</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Non-Transferrable</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>CSCI 100: Basic Computer Literacy</td>
+</tr>
+<tr class="row-odd"><td>CSCI 101: Introduction to Computer Information Science</td>
+</tr>
+<tr class="row-even"><td>CSCI 115: Discrete Structures</td>
+</tr>
+<tr class="row-odd"><td>CSCI 171: Computing for Engineering &amp; Science</td>
+</tr>
+<tr class="row-even"><td>NETW 151: PC Hardware Maintenance &amp; Repair</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="push"></div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>
+          &copy; Copyright 2013, CS Department.<br/>
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2pre.<br/>
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>

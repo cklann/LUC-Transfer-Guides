@@ -1,0 +1,7 @@
+Go to Documents/TransferGuides
+
+Type "make html" and press enter
+
+Go to Documents/TransferGuides/build/html
+
+Type "open -a Safari [name of document].html"

@@ -18,7 +18,7 @@ If you have completed or are taking a course that is not listed, please contact 
 	"ITPRG 157 Javascript Programming", "COMP Elective"
 	"ITPRG 244 (IAI: CS 912) C++ Programming II", "COMP 271 - Data Structures"
 	"ITPRG 247 Java Programming II", "COMP 271 - Data Structures"
-	"MATH 210 (IAI: M1 905; CS 915) Discrete Mathematics", "COMP 164? - Discrete Mathematics"
+	"MATH 210 (IAI: M1 905; CS 915) Discrete Mathematics", "COMP 164 - Discrete Mathematics"
 	"ITPRG 171 Game Design", "COMP Elective"
 	"ITPRG 173 Digital Storytelling", "COMP Elective"
 	"ITPRG 242 Visual Basic Programming II", "COMP Elective"
@@ -44,4 +44,3 @@ If you have completed or are taking a course that is not listed, please contact 
 
 	"ITPRG 103 Introduction to Programming Logic"
 	"ITPRG 142 Visual Basic Programming I"
-	

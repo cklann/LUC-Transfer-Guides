@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Loyola University Chicago Computer Science - Transfer Guides &mdash; Loyola University Chicago Computer Science - Graduate Handbook 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-responsive.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/searchtools.js"></script>
+    <script type="text/javascript" src="_static/bootstrap.js"></script>
+    <link rel="top" title="Loyola University Chicago Computer Science - Graduate Handbook 1.0 documentation" href="index.html" />
+<script type="text/javascript">
+(function () {
+  /**
+   * Patch TOC list.
+   *
+   * Will mutate the underlying span to have a correct ul for nav.
+   *
+   * @param $span: Span containing nested UL's to mutate.
+   * @param minLevel: Starting level for nested lists. (1: global, 2: local).
+   */
+  var patchToc = function ($span, minLevel) {
+    var $tocList = $("<ul/>").attr('class', "dropdown-menu"),
+      findA;
+
+    // Find all a "internal" tags, traversing recursively.
+    findA = function ($elem, level) {
+      var level = level || 0,
+        $items = $elem.find("> li > a.internal, > ul, > li > ul");
+
+      // Iterate everything in order.
+      $items.each(function (index, item) {
+        var $item = $(item),
+          tag = item.tagName.toLowerCase(),
+          pad = 10 + ((level - minLevel) * 10);
+
+        if (tag === 'a' && level >= minLevel) {
+          // Add to existing padding.
+          $item.css('padding-left', pad + "px");
+          // Add list element.
+          $tocList.append($("<li/>").append($item));
+        } else if (tag === 'ul') {
+          // Recurse.
+          findA($item, level + 1);
+        }
+      });
+    };
+
+    // Start construction and return.
+    findA($span);
+    
+    // Add previous and next topic links to bottom of TOC dropdown
+    
+      // Helper Functions
+      var header = function (text){
+        var $header = $("<li/>").append(text);
+        $header.css({
+          'padding-left': '10px',
+          'font-weight' : 'bold'
+        });
+        return $header;
+      };
+    
+      var topicLink = function (link, title) {
+        var $linkItem = $("<li/>").append('<a href="'+link+'">'+title+'</a>');
+        return $linkItem;
+      };
+    
+      // Append Separator
+      
+    
+    
+      
+      
+      
+    
+
+    // Wipe out old list and patch in new one.
+    return $span.empty("ul").append($tocList);
+  };
+
+  $(document).ready(function () {
+    // Patch the global and local TOC's to be bootstrap-compliant.
+    // patchToc($("span.globaltoc"), 1);
+    patchToc($("span.localtoc"), 2);
+    
+    // Activate.
+    $('.dropdown-toggle').dropdown();
+
+  });
+}());
+</script>
+
+  </head>
+  <body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        
+        <a class="brand" href="index.html">LUC CS Grad Handbook</a>
+        <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="divider-vertical"></li>
+          
+          
+          <li class="dropdown" data-dropdown="dropdown">
+            <a href="#"
+               class="dropdown-toggle">Table of Contents  <b class="caret"></b></a>
+            <span class="localtoc"><ul>
+<li><a class="reference internal" href="#">Loyola University Chicago Computer Science - Transfer Guides</a></li>
+<li><a class="reference internal" href="#lincoln-trail-college">Lincoln Trail College</a></li>
+</ul>
+</span>
+          </li>
+          
+          
+            
+  <li class="divider-vertical"></li>
+  <li><a href="_sources/LincolnTrail.txt"
+         rel="nofollow">Source</a></li>
+          
+          <li class="divider-vertical"></li>
+
+        </ul>
+        
+          
+            <ul class="nav pull-right">
+  <li><a href="genindex.html"> Index </a></li>
+ <li class="divider-vertical"></li>
+<form class="navbar-search" action="search.html" method="get">
+  <input type="text" name="q" class="search-query" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form> 
+</ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container" >
+      <div class="row">
+
+        <div class="content span12" data-spy="scroll" data-target="#navbar">
+          
+  <div class="section" id="loyola-university-chicago-computer-science-transfer-guides">
+<h1>Loyola University Chicago Computer Science - Transfer Guides<a class="headerlink" href="#loyola-university-chicago-computer-science-transfer-guides" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="lincoln-trail-college">
+<h1>Lincoln Trail College<a class="headerlink" href="#lincoln-trail-college" title="Permalink to this headline">¶</a></h1>
+<p>If you have completed or are taking a course that is not listed, please contact us at (312) 915-7989.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Lincoln Trail College Courses</th>
+<th class="head">Equivalent Course at Loyola</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>CAD 1210 Computer Aided Drafting I</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CAD 1220 Computer Aided Drafting II</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CAD 2210 Computer Aided Drafting III</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CAD 2220 CAD‐Special Problems</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 1130 Introduction to Computer Science</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 1131 Intro to Information Tech</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 1201 Intro to the Internet</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 1203 Intro to Web Page Construction</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 1204 Interim Web Page Construction</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 1205 Windows Operating Applications</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 1206 Advanced Web Page I</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 1207 Business Applications of Web Design</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 1208 Web Application Security</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 1298 Topics/Issues in Computers</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 2160 Introduction to Data Management</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 2170 Computer Science II</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 2180 Computer Programming in C++</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 2206 Advanced Web Page II</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>ISM 1202 Computer Hardware Fundamentals</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>ISM 1204 Computer Hardware &amp; Maint. II</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>ISM 2201 Systems Analysis &amp; Design</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>ISM 2204 Business Problem Solving/Access</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>ISM 2206 Intro to JAVA Programming</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>ISM 2212 ISM Internship</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>ISS 1203 Client Operating Systems</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>ISS 1206 A+ Preparation and Exam</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>ISS 2200 Database Support</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>ISS 2201 Computer Support Techniques</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>ISS 2202 Applications Support Techniques</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>ISS 2203 Microsoft MCITP Prep &amp; Exam</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>ISS 2204 Network Systems Support</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>ISS 2205 Net+ Preparation and Exam</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>ISS 2230 IS Support Internship</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>ISS 2231 IS Support Simulation</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>IST 1200 Information Tech Fundamentals</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>IST 1210 Computer Maintenance &amp; Repair</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>IST 1220 Java Programming Web &amp; Mobile</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>IST 1230 Business Database Systems</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>IST 1250 Web &amp; Mobile App Development</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>IST 1260 Operating Systems</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>IST 2200 Network Operating Systems</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>IST 2210 IST Internship</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>IST 2220 CompTIA A+ Cert. Review</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>IST 2230 MCSA: Windows 8 Cert Review</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>IST 2250 CompTIA Network+ Cert Review</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>IST 2260 Network Security</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>IST 2270 LANs, WANs, and Wireless</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>IST 2280 MCSA: Windows Server Cert</td>
+<td>COMP Elective</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Non-Transferrable</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>CIS 1101 Intro to Computers &amp; Their Application</td>
+</tr>
+<tr class="row-odd"><td>CIS 1103 Discovering Computers</td>
+</tr>
+<tr class="row-even"><td>CIS 1104 Intro to Online Learning</td>
+</tr>
+<tr class="row-odd"><td>CIS 1209 Outlook</td>
+</tr>
+<tr class="row-even"><td>CIS 1210 e‐Portfolio Mechanics</td>
+</tr>
+<tr class="row-odd"><td>CIS 1270 Introduction to Computers</td>
+</tr>
+<tr class="row-even"><td>CIS 1273 Microsoft Office/MSWORD</td>
+</tr>
+<tr class="row-odd"><td>CIS 1275 PowerPoint</td>
+</tr>
+<tr class="row-even"><td>CIS 1278 Spreadsheet</td>
+</tr>
+<tr class="row-odd"><td>CIS 1279 Advanced Spreadsheet</td>
+</tr>
+<tr class="row-even"><td>CIS 1282 Project Management</td>
+</tr>
+<tr class="row-odd"><td>CIS 1284 Intermediate Word Processing</td>
+</tr>
+<tr class="row-even"><td>CIS 1285 Advanced Word Processing</td>
+</tr>
+<tr class="row-odd"><td>CIS 1286 Database</td>
+</tr>
+<tr class="row-even"><td>CIS 1288 Advanced Database</td>
+</tr>
+<tr class="row-odd"><td>CIS 1601 Computer Skills I</td>
+</tr>
+<tr class="row-even"><td>CIS 1602 Computer Skills II</td>
+</tr>
+<tr class="row-odd"><td>CIS 2101 Computer Programming for Teachers</td>
+</tr>
+<tr class="row-even"><td>CIS 2102 Computer Applications for Instructors</td>
+</tr>
+<tr class="row-odd"><td>ISS 1201 Computer Support Fundamentals</td>
+</tr>
+<tr class="row-even"><td>ISS 1202 Word Processing Support</td>
+</tr>
+<tr class="row-odd"><td>ISS 1204 Productivity Applications</td>
+</tr>
+<tr class="row-even"><td>ISS 1205 Spreadsheet Support</td>
+</tr>
+<tr class="row-odd"><td>IST 1240 Business Apps. Computing</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="push"></div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>
+          &copy; Copyright 2013, CS Department.<br/>
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2pre.<br/>
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>

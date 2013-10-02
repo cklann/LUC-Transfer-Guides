@@ -12,7 +12,7 @@ If you have completed or are taking a course that is not listed, please contact 
    	:header: "John A. Logan College Courses", "Equivalent Course at Loyola"
    	:widths: 50, 50
 
-	"CIS 102 Programming", "COMP 170 - Introduction to Object-Oriented Programming"	"CIS 200 Network Essentials", "Elective"	"CIS 206 Managing Network Environments I", "Elective"	"CIS 208 Security Awareness", "Elective"	"CIS 209 Introduction to Cybercrimes", "Elective"	"CIS 218 Managing Network Environments II", "Elective"	"CIS 230 Operating Systems", "Elective"	"CIS 235 Current Topics in Information Systems", "Elective"	"CIS 240 Web Page Design", "Elective"	"CIS 245 Advanced Web Design", "Elective"	"CIS 250 Wireless Networks", "Elective"
+	"CIS 102 Programming", "COMP 170 - Introduction to Object-Oriented Programming"	"CIS 200 Network Essentials", "COMP Elective"	"CIS 206 Managing Network Environments I", "COMP Elective"	"CIS 208 Security Awareness", "COMP Elective"	"CIS 209 Introduction to Cybercrimes", "COMP Elective"	"CIS 218 Managing Network Environments II", "COMP Elective"	"CIS 230 Operating Systems", "COMP Elective"	"CIS 235 Current Topics in Information Systems", "COMP Elective"	"CIS 240 Web Page Design", "COMP Elective"	"CIS 245 Advanced Web Design", "COMP Elective"	"CIS 250 Wireless Networks", "COMP Elective"
 
 ==========================================================================================
 

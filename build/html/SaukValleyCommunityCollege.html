@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Loyola University Chicago Computer Science - Transfer Guides &mdash; Loyola University Chicago Computer Science - Graduate Handbook 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-responsive.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/searchtools.js"></script>
+    <script type="text/javascript" src="_static/bootstrap.js"></script>
+    <link rel="top" title="Loyola University Chicago Computer Science - Graduate Handbook 1.0 documentation" href="index.html" />
+<script type="text/javascript">
+(function () {
+  /**
+   * Patch TOC list.
+   *
+   * Will mutate the underlying span to have a correct ul for nav.
+   *
+   * @param $span: Span containing nested UL's to mutate.
+   * @param minLevel: Starting level for nested lists. (1: global, 2: local).
+   */
+  var patchToc = function ($span, minLevel) {
+    var $tocList = $("<ul/>").attr('class', "dropdown-menu"),
+      findA;
+
+    // Find all a "internal" tags, traversing recursively.
+    findA = function ($elem, level) {
+      var level = level || 0,
+        $items = $elem.find("> li > a.internal, > ul, > li > ul");
+
+      // Iterate everything in order.
+      $items.each(function (index, item) {
+        var $item = $(item),
+          tag = item.tagName.toLowerCase(),
+          pad = 10 + ((level - minLevel) * 10);
+
+        if (tag === 'a' && level >= minLevel) {
+          // Add to existing padding.
+          $item.css('padding-left', pad + "px");
+          // Add list element.
+          $tocList.append($("<li/>").append($item));
+        } else if (tag === 'ul') {
+          // Recurse.
+          findA($item, level + 1);
+        }
+      });
+    };
+
+    // Start construction and return.
+    findA($span);
+    
+    // Add previous and next topic links to bottom of TOC dropdown
+    
+      // Helper Functions
+      var header = function (text){
+        var $header = $("<li/>").append(text);
+        $header.css({
+          'padding-left': '10px',
+          'font-weight' : 'bold'
+        });
+        return $header;
+      };
+    
+      var topicLink = function (link, title) {
+        var $linkItem = $("<li/>").append('<a href="'+link+'">'+title+'</a>');
+        return $linkItem;
+      };
+    
+      // Append Separator
+      
+    
+    
+      
+      
+      
+    
+
+    // Wipe out old list and patch in new one.
+    return $span.empty("ul").append($tocList);
+  };
+
+  $(document).ready(function () {
+    // Patch the global and local TOC's to be bootstrap-compliant.
+    // patchToc($("span.globaltoc"), 1);
+    patchToc($("span.localtoc"), 2);
+    
+    // Activate.
+    $('.dropdown-toggle').dropdown();
+
+  });
+}());
+</script>
+
+  </head>
+  <body>
+  <div id="navbar" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        
+        <a class="brand" href="index.html">LUC CS Grad Handbook</a>
+        <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="divider-vertical"></li>
+          
+          
+          <li class="dropdown" data-dropdown="dropdown">
+            <a href="#"
+               class="dropdown-toggle">Table of Contents  <b class="caret"></b></a>
+            <span class="localtoc"><ul>
+<li><a class="reference internal" href="#">Loyola University Chicago Computer Science - Transfer Guides</a></li>
+<li><a class="reference internal" href="#sauk-valley-community-college">Sauk Valley Community College</a></li>
+</ul>
+</span>
+          </li>
+          
+          
+            
+  <li class="divider-vertical"></li>
+  <li><a href="_sources/SaukValleyCommunityCollege.txt"
+         rel="nofollow">Source</a></li>
+          
+          <li class="divider-vertical"></li>
+
+        </ul>
+        
+          
+            <ul class="nav pull-right">
+  <li><a href="genindex.html"> Index </a></li>
+ <li class="divider-vertical"></li>
+<form class="navbar-search" action="search.html" method="get">
+  <input type="text" name="q" class="search-query" placeholder="Search" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form> 
+</ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container" >
+      <div class="row">
+
+        <div class="content span12" data-spy="scroll" data-target="#navbar">
+          
+  <div class="section" id="loyola-university-chicago-computer-science-transfer-guides">
+<h1>Loyola University Chicago Computer Science - Transfer Guides<a class="headerlink" href="#loyola-university-chicago-computer-science-transfer-guides" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="sauk-valley-community-college">
+<h1>Sauk Valley Community College<a class="headerlink" href="#sauk-valley-community-college" title="Permalink to this headline">¶</a></h1>
+<p>If you have completed or are taking a course that is not listed, please contact us at (312) 915-7989.</p>
+<table border="1" class="docutils">
+<caption>:header: &#8220;Sauk Valley Community College Courses&#8221;, &#8220;Equivalent Course at Loyola&#8221;
+    :widths: 50, 50</caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>CIS 101 - Fundamentals of Computer Information Systems</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 117 - Introduction to Web Design</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 119 - Introduction to Web Authoring Software</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 121 - Beginning Javascript</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 122 - Beginning Java Programming</td>
+<td>COMP 170 - Introduction to Object Oriented Programming</td>
+</tr>
+<tr class="row-even"><td>CIS 123 - JavaScript Basics</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 124 - Beginning Structured COBOL</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 150 - Fundamentals of Business Computer Programming</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 151 - Network Certification</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 152 - Introduction to Internetworking</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 154 - Introduction to Internetworking Operating System</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 156 - Introduction to Local Area Networks</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 158 - Introduction to Wide Area Networks</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 164 - Network Design and Installation</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 167 - A+ Certification</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 168 - IT Essentials-Basic Hardware and Operating Systems</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 169 - IT Technician-Advanced Hardware &amp; Operating Systems</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 190 - Windows Server Fundamentals</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 191 - Windows Active Directory</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 192 - Windows Network Infrastructure</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 193 - Windows Server Administrator</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 194 - Windows Operating Systems</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 195 - Windows Server Applications Infrastructure</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 196 - Windows Server Enterprise Administrator</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 197 - Security + Certification</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 203 - Visual Basic Programming</td>
+<td>COMP 170 - Introduction to Object Oriented Programming</td>
+</tr>
+<tr class="row-odd"><td>CIS 204 - Visual Basic Programming II</td>
+<td>COMP 271 - Data Structures</td>
+</tr>
+<tr class="row-even"><td>CIS 206 - C Programming</td>
+<td>COMP 170 - Introduction to Object Oriented Programming</td>
+</tr>
+<tr class="row-odd"><td>CIS 207 - C++ Programming</td>
+<td>COMP 170 - Introduction to Object Oriented Programming</td>
+</tr>
+<tr class="row-even"><td>CIS 208 - C++ Programming II</td>
+<td>COMP 271 - Data Structures</td>
+</tr>
+<tr class="row-odd"><td>CIS 210 - Systems Analysis and Design</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 214 - Computer Operating Systems</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 222 - Assembler Language Programming</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 224 - Advanced Structured COBOL</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 229 - Database Management Systems</td>
+<td>COMP 353 - Database Programming</td>
+</tr>
+<tr class="row-even"><td>CIS 231 - Occupational Seminar I</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 232 - Occupational Seminar II</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 234 - Intermediate Java Programming</td>
+<td>COMP 271 - Data Structures</td>
+</tr>
+<tr class="row-odd"><td>CIS 235 - Occupational Internship I</td>
+<td>COMP 499 - Internship</td>
+</tr>
+<tr class="row-even"><td>CIS 236 - Occupational Internship II</td>
+<td>COMP 499 - Internship</td>
+</tr>
+<tr class="row-odd"><td>CIS 250 - Beginning Linux</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 252 - Advanced Routing</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 254 - Remote Access</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 256 - Multi-Layer Switching</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 258 - Network Troubleshooting</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-even"><td>CIS 260 - Systems Design Practicum</td>
+<td>COMP Elective</td>
+</tr>
+<tr class="row-odd"><td>CIS 299 - Topics/Issues in Computer Information Systems</td>
+<td>COMP Elective</td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<table border="1" class="docutils">
+<caption>:header: &#8220;Non-Transferrable&#8221;
+    :widths: 100</caption>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>CIS 105 - Introduction to Microsoft Windows</td>
+</tr>
+<tr class="row-even"><td>CIS 106 - Microcomputer Spreadsheet Software</td>
+</tr>
+<tr class="row-odd"><td>CIS 108 - Microcomputer Database Applications</td>
+</tr>
+<tr class="row-even"><td>CIS 109 - Introduction to Microcomputers - Windows</td>
+</tr>
+<tr class="row-odd"><td>CIS 130 - Information Systems Management</td>
+</tr>
+<tr class="row-even"><td>CIS 135 - Personal Information Management</td>
+</tr>
+<tr class="row-odd"><td>CIS 136 - Intro to Photo Editing Software</td>
+</tr>
+<tr class="row-even"><td>CIS 137 - Introduction to Desktop Publishing - Level I</td>
+</tr>
+<tr class="row-odd"><td>CIS 138 - Introduction to Desktop Publishing - Level II</td>
+</tr>
+<tr class="row-even"><td>CIS 139 - Introduction to Desktop Publishing - Level III</td>
+</tr>
+<tr class="row-odd"><td>CIS 148 - Business Presentation Graphics</td>
+</tr>
+<tr class="row-even"><td>CIS 160 - Intermediate Microcomputer Applications</td>
+</tr>
+<tr class="row-odd"><td>CIS 162 - Network Administration</td>
+</tr>
+<tr class="row-even"><td>CIS 180 - Introduction to Internet</td>
+</tr>
+<tr class="row-odd"><td>CIS 182 - Research and the Internet</td>
+</tr>
+<tr class="row-even"><td>CIS 185 - Introduction to Multimedia</td>
+</tr>
+<tr class="row-odd"><td>CIS 220 - Computer Accounting</td>
+</tr>
+<tr class="row-even"><td>CIS 244 - Advanced Desktop Publishing - Level I</td>
+</tr>
+<tr class="row-odd"><td>CIS 245 - Advanced Desktop Publishing - Level II</td>
+</tr>
+<tr class="row-even"><td>CIS 246 - Advanced Desktop Publishing - Level III</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="push"></div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>
+          &copy; Copyright 2013, CS Department.<br/>
+        Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2pre.<br/>
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>
